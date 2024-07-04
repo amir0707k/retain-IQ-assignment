@@ -8,7 +8,7 @@ import logo from '../assets/retain-iq.png'
 // import './style.css'
 const Sidebar = () => {
     return (
-        <div className="w-20 bg-black flex flex-col items-center justify-between">
+        <div className="w-20 bg-black flex flex-col items-center justify-between fixed h-full z-10">
             <div className='flex flex-col items-center gap-6 mt-4'>
                 <div>
                     <div className="p-3">

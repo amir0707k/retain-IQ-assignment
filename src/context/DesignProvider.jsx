@@ -67,7 +67,8 @@ const DesignProvider = ({ children }) => {
     setProducts((products) => products.filter((product) => product.id !== id));
   }
 
-  function deleteVariant() {
+  function deleteVariant(key) {
+    
     setTableColumns((columns) =>
       columns.filter((column) => column.key !== key)
     );

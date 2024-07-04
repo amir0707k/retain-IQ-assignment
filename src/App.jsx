@@ -3,6 +3,7 @@ import Sidebar from './components/Sidebar'
 import { FaArrowLeft } from "react-icons/fa6";
 import { Button } from './components/ui/button';
 import DesignProvider from './context/DesignProvider';
+import MainTable from './components/Table/MainTable';
 function App() {
 
   return (
@@ -11,7 +12,7 @@ function App() {
    
     <div className="flex h-[100vh] w-[100vw]">
       <Sidebar />
-      <div className="p-8 space-y-8 w-full">
+      <div className="p-4 space-y-8 w-[calc(100%-4rem)] flex flex-col ml-20">
         <div className="flex items-center justify-between w-full">
           <div className="flex items-center gap-2">
             <FaArrowLeft className='h-6 w-6' />
@@ -26,7 +27,8 @@ function App() {
           </div>
           <Button className='bg-[#17a34b] text-white text-md font-medium'>Publish Feed</Button>
         </div>
-     
+      <MainTable/>
+        
       </div>
     </div>
     </DesignProvider>
